@@ -19,3 +19,7 @@ def describe_descending_roder():
     def should_return_654321_when_input_145263():
         """🧪 should return 654321 when input is 145263"""
         assert descending_order.descending_order(145263) == 654321
+
+    def should_return_987654321_when_input_123456789():
+        """🧪 should return 987654321 when input is 123456789"""
+        assert descending_order.descending_order(123456789) == 987654321
