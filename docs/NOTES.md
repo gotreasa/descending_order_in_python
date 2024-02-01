@@ -10,7 +10,7 @@
 
 ## 🍅 Pomodoro 1
 
-- ⚠ should error if not a number
+- 🚧 should error if not a number
 - ⚠ should return 1 when input is 1
 - ⚠ should return 54421 when the input is 42145
 - ⚠ should return 654321 when the input is 145263

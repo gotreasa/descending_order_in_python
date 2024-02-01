@@ -1,9 +1,9 @@
+import pytest
 from modules import descending_order
 
 
-def describe_dummy_kata():
-    def should_print_title(capsys):
-        """🧪 expect the dummy kata prints the title"""
-        descending_order.print_the_title()
-        out, _err = capsys.readouterr()
-        assert "😊 Welcome to Dummy Kata" in out
+def describe_descending_roder():
+    def should_error_when_not_number():
+        """🧪 should error if not a number"""
+        with pytest.raises(ValueError, match="❗️ Input should be a number"):
+            descending_order.descending_order("blah")
