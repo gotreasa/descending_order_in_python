@@ -8,6 +8,11 @@ def describe_descending_roder():
         with pytest.raises(ValueError, match="❗️ Input should be a number"):
             descending_order.descending_order("blah")
 
+    def should_error_when_not_positive_number():
+        """🧪 should error if not a positive number"""
+        with pytest.raises(ValueError, match="❗️ Input should be a positive integer"):
+            descending_order.descending_order(-2)
+
     def should_return_1_when_input_1():
         """🧪 should return 1 when input is 1"""
         assert descending_order.descending_order(1) == 1
