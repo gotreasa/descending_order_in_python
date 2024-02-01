@@ -1,5 +1,5 @@
 def sort_descending(number: str) -> list[str]:
-    return sorted([*number], reverse=True)
+    return sorted(number, reverse=True)
 
 
 def character_to_string(characters: list[str]) -> str:
